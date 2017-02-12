@@ -19,8 +19,8 @@ div#envelope{
 	border-radius:5px;
 } 	
 form{
-	width:70%;
-	margin:4% 15%;
+	width:90%;
+	margin:4% 5%;
 }  
 header{
 	background-color: #3fada8;
@@ -35,6 +35,37 @@ header{
 
 /* Makes responsive fields.Sets size and field alignment.*/
 input[type=text]{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width:100%;
+	padding: 15px;
+	border-radius:5px;
+	border:1px solid #7ac9b7;
+}
+input[type=email]{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width:100%;
+	padding: 15px;
+	border-radius:5px;
+	border:1px solid #7ac9b7;
+}
+input[type=Date]{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width:100%;
+	padding: 15px;
+	border-radius:5px;
+	border:1px solid #7ac9b7;
+}
+input[type=radio]{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width:20%;
+	border-radius:5px;
+	border:1px solid #7ac9b7;
+}
+input[type=number]{
 	margin-bottom: 20px;
 	margin-top: 10px;
 	width:100%;
@@ -71,5 +102,7 @@ input[type=text]:focus,textarea:focus {
 	border-color: #4697e4;
 }
 
-
+input[type=number]:focus,textarea:focus {
+	border-color: #4697e4;
+}
   

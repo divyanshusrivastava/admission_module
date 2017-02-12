@@ -1,31 +1,186 @@
 <!DOCTYPE html> 
-<html>
+<html lang="en">
 <head>
-	<title>IIIT Delhi Admission Form</title>
+	<title>IIIT Delhi Application Form</title>
 	<!---Including CSS for different screen size -->
-	<link rel="stylesheet" type="text/css" href="css/responsiveform.css">
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/responsiveform.css" />
 	<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="css/responsiveform1.css" />
 	<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)" href="css/responsiveform2.css" />
 	<link rel="stylesheet" media="screen and (max-width: 350px)" href="css/responsiveform3.css" />
+
 </head>
 <body>
 	<div id="envelope">
 		<header>
-	    	<h2>Indraprastha Institute of Information Technology Delhi</h2>
-	    	<p>Admission Form</p>
+	    	<h2>B.Tech 2017 Application Form for Foreign Students/PIO/OCI/NRI Admissions</h2>
+	    	<p>Indraprastha Institute of Information Technology Delhi</p>
 		</header>
 		
 		<form action="" method="post">  
-			<label>Your Name </label>
-			<input type="text" name="name" placeholder="Ashley Peterson" width="100px;">
-			<label>Email Id </label>
-			<input type="text" name="email" placeholder="yourname@gmail.com">		
-			<label>  Contact Number </label>
-			<input type="text" name="contact" placeholder="123456789">	
-			<label>  Website URL </label>
-			<input type="text" name="website" placeholder="www.yoursite.com">
-			<label>  Message </label>
-			<textarea name="message" rows="10" cols="15" placeholder="Message"></textarea>
+			<label>Name </label>
+			<input type="text" name="name" width="100px;">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>Contact Phone Number </label>
+				<input type="number" name="ph_no">		
+				<label>Current Address </label>
+				<textarea rows="3" name="address"></textarea>
+				<label>Gender</label>
+				<br>
+				<input type="radio" name="gender" value="Male">Male	
+				<input type="radio" name="gender" value="Female">Female
+				<input type="radio" name="gender" value="Other">Other
+				<br>
+				<label>Date of Birth </label>
+				<input type="Date" name="dob">
+				<label>Citizenship </label>
+				<input type="text" name="citizenship">
+				<label>Email Address </label>
+				<input type="email" name="email">				
+			</fieldset>
+			<fieldset>
+				<legend>Family Details</legend>
+				<p>Parent 1 [Mother/Father]</p><br>
+				<label>Name </label>
+				<input type="text" name="p1name" width="100px;">
+				<label>Address </label>
+				<textarea rows="3" name="p1address"></textarea>
+				<label>Email Address </label>
+				<input type="email" name="p1email">
+				<label>Citizenship </label>
+				<input type="text" name="p1citizenship">
+				<p>Parent 2 [Mother/Father]</p><br>
+				<label>Name </label>
+				<input type="text" name="p2name" width="100px;">
+				<label>Address </label>
+				<textarea rows="3" name="p2address"></textarea>
+				<label>Email Address </label>
+				<input type="email" name="p2email">
+				<label>Citizenship </label>
+				<input type="text" name="p2citizenship">	
+			</fieldset>
+			<fieldset>
+				<legend>Educational Qualification </legend>
+				<ol>
+					<p><li>School Information<br>
+					(Current or Most Recent School)</p>
+					<label>School Name</label>
+					<input type="text" name="schoolname">
+					<label>School Address</label>
+					<textarea rows="3" name="schooladdress"></textarea>
+					<label>Date of Entry in the School</label>
+					<input type="Date" name="schoolentrydate">
+					<label>Date/Expected date of graduation from this school</label>
+					<input type="Date" name="schoolexitdate">
+					<label>Name of School Official</label>
+					<input type="text" name="nameschoolofficial">
+					<label>Email of School Official</label>
+					<input type="email" name="emailschoolofficial">
+					<p><li>Program Applying For<br>
+					(Please put 1-3 as order or preference against the program)</p>
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Program</th>
+								<th>Preference Order</th>
+							</tr>
+							<tr>
+								<td>B.Tech Computer Science and Engineering(CSE)</td>
+								<td><input type="tabletext" name="preforder1"></td>
+							</tr>
+							<tr>
+								<td>B.Tech Electronics and Communications Engineering(ECE)</td>
+								<td><input type="tabletext" name="preforder1"></td>
+							</tr>
+							<tr>
+								<td>B.Tech Computer Science and Applied Mathematics(CSAM)</td>
+								<td><input type="tabletext" name="preforder1"></td>
+							</tr>
+						</table>
+					</div>
+					<p><li>Standardized Test Persormance <br>
+					(Give your performance in the standardized test/s that is/are conducted in your country such as SAT, ACT and GCE Advanced level. Do not provide any information about any exams that are conducted by your school.)</p>
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Test</th>
+								<th>Subject</th>
+								<th>Score</th>
+							</tr>
+							<tr>
+								<td><input type="tabletext" name="test1"></td>
+								<td><input type="tabletext" name="subject1"></td>
+								<td><input type="tabletext" name="score1"></td>
+							</tr>
+							<tr>
+								<td><input type="tabletext" name="test2"></td>
+								<td><input type="tabletext" name="subject2"></td>
+								<td><input type="tabletext" name="score2"></td>
+							</tr>
+							<tr>
+								<td><input type="tabletext" name="test3"></td>
+								<td><input type="tabletext" name="subject3"></td>
+								<td><input type="tabletext" name="score3"></td>
+							</tr>
+							<tr>
+								<td><input type="tabletext" name="test4"></td>
+								<td><input type="tabletext" name="subject4"></td>
+								<td><input type="tabletext" name="score4"></td>
+							</tr>
+							<tr>
+								<td><input type="tabletext" name="test5"></td>
+								<td><input type="tabletext" name="subject5"></td>
+								<td><input type="tabletext" name="score5"></td>
+							</tr>
+						</table>
+					</div>	
+				</ol>
+				<label>List 5 High School Achievements and Awards</label>
+				<textarea rows="10" name="awards"></textarea>
+				<label>Extra Curricular Activities that you participated in your High School.</label><br><p>Highlight your achievements or awards (specify the year of participation and duration of each activity)</p>
+				<textarea rows="10" name="activities"></textarea>
+				<label>Name and email id of 2 High School teachers who will send recommendation letters for you. </label><br>
+				<p>The subject line should be "THE LETTER OF RECOMMENDATION OF XYZ" where XYZ will be replaced by the name of the student.</p>
+				<div class="table-responsive">
+					<table class="table">
+						<tr>
+							<th>Name</th>
+							<th>Email ID</th>
+						</tr>
+						<tr>
+							<td><input type="text" name="lorname1"></td>
+							<td><input type="email" name="loremail1"></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="lorname2"></td>
+							<td><input type="email" name="loremail2"></td>
+						</tr>
+					</table>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Essay</legend><br>
+				<p>Write an essay of about 500 words describing any one of the following<br>
+				<ol>
+					<li>An Experience that has changed your life</li>
+					<li>A difficult challenge you faced, how you overcame, and what you learnt from it.</li>
+				</ol>
+				<br>Please be strict to the word limit.</p>
+				<textarea rows="25" name="essay"></textarea>
+			</fieldset>
+
+			<!--
+				Pending: Upload signature, photo, 
+				(Recheck what to upload like dob proof etc)
+				Also Revise Undertaking Content
+			 -->
+
 			<input type="submit" value="SUBMIT" id="submit">		
 		</form>
 	</div>
