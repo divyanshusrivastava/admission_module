@@ -8,80 +8,157 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/responsiveform.css" />
-	<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="css/responsiveform1.css" />
-	<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)" href="css/responsiveform2.css" />
-	<link rel="stylesheet" media="screen and (max-width: 350px)" href="css/responsiveform3.css" />
-
 </head>
 <body>
-	<div id="envelope">
+	<div class="jumbotron text-center">
 		<header>
 	    	<h2>B.Tech 2017 Application Form for Foreign Students/PIO/OCI/NRI Admissions</h2>
 	    	<p>Indraprastha Institute of Information Technology Delhi</p>
 		</header>
-		
-		<form action="" method="post">  
-			<label>Name </label>
-			<input type="text" name="name" width="100px;">
+	</div>
+	<div class="container">	
+		<form action="" method="post" class="form-horizontal">  
+			<div class="form-group">
+				<label class="control-label col-sm-2">Name </label>
+				<div class="col-sm-10">
+					<input type="text" name="name" width="100px;" class="form-control">
+				</div>
+			</div>
 			<fieldset>
 				<legend>Personal Information</legend>
-				<label>Contact Phone Number </label>
-				<input type="number" name="ph_no">		
-				<label>Current Address </label>
-				<textarea rows="3" name="address"></textarea>
-				<label>Gender</label>
-				<br>
-				<input type="radio" name="gender" value="Male">Male	
-				<input type="radio" name="gender" value="Female">Female
-				<input type="radio" name="gender" value="Other">Other
-				<br>
-				<label>Date of Birth </label>
-				<input type="Date" name="dob">
-				<label>Citizenship </label>
-				<input type="text" name="citizenship">
-				<label>Email Address </label>
-				<input type="email" name="email">				
+				<div class="form-group">
+					<label class="control-label col-sm-2">Contact Phone Number </label>
+					<div class="col-sm-10">
+						<input type="number" name="ph_no" class="form-control">
+					</div>
+				</div>		
+				<div class="form-group">
+					<label class="control-label col-sm-2">Current Address </label>
+					<div class="col-sm-10">
+						<textarea rows="3" name="address" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Gender</label>	
+					<div class="col-sm-10">
+						<label class="radio-inline"><input type="radio" name="gender" value="Male">Male</label>	
+						<label class="radio-inline"><input type="radio" name="gender" value="Female">Female</label>
+						<label class="radio-inline"><input type="radio" name="gender" value="Transgender">Transgender</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Date of Birth </label>
+					<div class="col-sm-10">
+						<input type="Date" name="dob" class="form-control">
+					</div>
+				</div>	
+				<div class="form-group">	
+					<label class="control-label col-sm-2">Citizenship </label>
+					<div class="col-sm-10">	
+						<input type="text" name="citizenship" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Email Address </label>
+					<div class="col-sm-10">
+						<input type="email" name="email" class="form-control">
+					</div>
+				</div>				
 			</fieldset>
 			<fieldset>
 				<legend>Family Details</legend>
 				<p>Parent 1 [Mother/Father]</p><br>
-				<label>Name </label>
-				<input type="text" name="p1name" width="100px;">
-				<label>Address </label>
-				<textarea rows="3" name="p1address"></textarea>
-				<label>Email Address </label>
-				<input type="email" name="p1email">
-				<label>Citizenship </label>
-				<input type="text" name="p1citizenship">
+				<div class="form-group">
+					<label class="control-label col-sm-2">Name </label>
+					<div class="col-sm-10">
+						<input type="text" name="p1name" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Address </label>
+					<div class="col-sm-10">
+						<textarea rows="3" name="p1address" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Email Address </label>
+					<div class="col-sm-10">
+						<input type="email" name="p1email" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Citizenship </label>
+					<div class="col-sm-10">
+						<input type="text" name="p1citizenship" class="form-control">
+					</div>
+				</div>
 				<p>Parent 2 [Mother/Father]</p><br>
-				<label>Name </label>
-				<input type="text" name="p2name" width="100px;">
-				<label>Address </label>
-				<textarea rows="3" name="p2address"></textarea>
-				<label>Email Address </label>
-				<input type="email" name="p2email">
-				<label>Citizenship </label>
-				<input type="text" name="p2citizenship">	
+				<div class="form-group">
+					<label class="control-label col-sm-2">Name </label>
+					<div class="col-sm-10">
+						<input type="text" name="p2name" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Address </label>
+					<div class="col-sm-10">
+						<textarea rows="3" name="p2address" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Email Address </label>
+					<div class="col-sm-10">
+						<input type="email" name="p2email" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Citizenship </label>
+					<div class="col-sm-10">
+						<input type="text" name="p2citizenship" class="form-control">
+					</div>
+				</div>	
 			</fieldset>
 			<fieldset>
 				<legend>Educational Qualification </legend>
 				<ol>
 					<p><li>School Information<br>
 					(Current or Most Recent School)</p>
-					<label>School Name</label>
-					<input type="text" name="schoolname">
-					<label>School Address</label>
-					<textarea rows="3" name="schooladdress"></textarea>
-					<label>Date of Entry in the School</label>
-					<input type="Date" name="schoolentrydate">
-					<label>Date/Expected date of graduation from this school</label>
-					<input type="Date" name="schoolexitdate">
-					<label>Name of School Official</label>
-					<input type="text" name="nameschoolofficial">
-					<label>Email of School Official</label>
-					<input type="email" name="emailschoolofficial">
+					<div class="form-group">
+						<label class="control-label col-sm-2">School Name</label>
+						<div class="col-sm-10">
+							<input type="text" name="schoolname" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">School Address</label>
+						<div class="col-sm-10">
+							<textarea rows="3" name="schooladdress" class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Date of Entry in the School</label>
+						<div class="col-sm-10">
+							<input type="Date" name="schoolentrydate" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Date/Expected date of graduation from this school</label>
+						<div class="col-sm-10">
+							<input type="Date" name="schoolexitdate" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Name of School Official</label>
+						<div class="col-sm-10">
+							<input type="text" name="nameschoolofficial" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Email of School Official</label>
+						<div class="col-sm-10">
+							<input type="email" name="emailschoolofficial" class="form-control">
+						</div>
+					</div>
 					<p><li>Program Applying For<br>
 					(Please put 1-3 as order or preference against the program)</p>
 					<div class="table-responsive">
@@ -141,10 +218,14 @@
 						</table>
 					</div>	
 				</ol>
-				<label>List 5 High School Achievements and Awards</label>
-				<textarea rows="10" name="awards"></textarea>
-				<label>Extra Curricular Activities that you participated in your High School.</label><br><p>Highlight your achievements or awards (specify the year of participation and duration of each activity)</p>
-				<textarea rows="10" name="activities"></textarea>
+				<div class="form-group">
+					<label>List 5 High School Achievements and Awards</label>
+					<textarea rows="10" name="awards" class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>Extra Curricular Activities that you participated in your High School.</label><br><p>Highlight your achievements or awards (specify the year of participation and duration of each activity)</p>
+					<textarea rows="10" name="activities" class="form-control"></textarea>
+				</div>
 				<label>Name and email id of 2 High School teachers who will send recommendation letters for you. </label><br>
 				<p>The subject line should be "THE LETTER OF RECOMMENDATION OF XYZ" where XYZ will be replaced by the name of the student.</p>
 				<div class="table-responsive">
@@ -166,23 +247,84 @@
 			</fieldset>
 			<fieldset>
 				<legend>Essay</legend><br>
-				<p>Write an essay of about 500 words describing any one of the following<br>
-				<ol>
-					<li>An Experience that has changed your life</li>
-					<li>A difficult challenge you faced, how you overcame, and what you learnt from it.</li>
-				</ol>
-				<br>Please be strict to the word limit.</p>
-				<textarea rows="25" name="essay"></textarea>
+				<div class="form-group">
+					<label>
+					<p>Write an essay of about 500 words describing any one of the following<br>
+					<ol>
+						<li>An Experience that has changed your life</li>
+						<li>A difficult challenge you faced, how you overcame, and what you learnt from it.</li>
+					</ol>
+					<br>Please be strict to the word limit.</p>
+					</label>
+					<textarea rows="25" name="essay" class="form-control"></textarea>
+				</div>
 			</fieldset>
-
-			<!--
-				Pending: Upload signature, photo, 
-				(Recheck what to upload like dob proof etc)
-				Also Revise Undertaking Content
-			 -->
-
-			<input type="submit" value="SUBMIT" id="submit">		
+			<fieldset>
+				<legend>Upload Files</legend>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Recent Photograph (jpg)</label>
+					<div class="col-sm-8">
+						<input type="file" name="pic" accept=".jpg" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Signature (jpg)</label>
+					<div class="col-sm-8">
+						<input type="file" name="sign" accept=".jpg" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Proof of Date of Birth (pdf)</label>
+					<div class="col-sm-8">
+						<input type="file" name="dobproof" accept=".jpg" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Official High School transcripts (pdf)</label>
+					<div class="col-sm-8">
+						<input type="file" name="hstranscript" accept=".pdf" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Certified/attested copies of standardized test score</label>
+					<div class="col-sm-8">
+						<input type="file" name="testscorepdf" accept=".pdf" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Recommendation Letters</label>
+					<div class="col-sm-8">
+						<input type="file" name="lorpdf" accept=".pdf" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Copy of Passport/Citizen Card, PIO Card, OCI Card and Visa (if applicable) (pdf)</label>
+					<div class="col-sm-8">
+						<input type="file" name="passportvisapdf" accept=".pdf" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4">Payment Proof Receipt</label>
+					<div class="col-sm-8">
+						<input type="file" name="paymentreceipt" accept=".pdf" class="form-control">
+					</div>
+				</div>
+			</fieldset>
+			<input type="submit" value="SUBMIT" id="submit" class="col-sm-6 col-sm-offset-4 btn btn-default">		
 		</form>
+	</div>
+	<div class="container">
+		<h3>Note</h3>
+		<p>Any document that is not in English or French <b>must be accompanied</b> by the English translation.</p>
+		<h4>Important</h4>
+		<ul>
+			<li>Recent photograph must be smaller than 5 MB.</li>
+			<li>Signature file must be smaller thatn 5 MB.</li>
+			<li>All transcripts must be compiled in a single pdf file.</li>
+			<li>All Standardized/attested copies of test score must be compiled in a single pdf file.</li>
+			<li>All Recommendation letters must be compiled in a single pdf file.</li>
+			<li>Copy of Passport/Citizen Card, PIO Card, OCI Card and Visa (if applicable) must be compiled in a single pdf file.</li>
+		</ul>
 	</div>
 </body>
 </html>
