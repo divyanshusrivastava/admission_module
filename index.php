@@ -1,3 +1,8 @@
+<?php 
+error_reporting( ~E_NOTICE ); // avoid notice
+require 'php/database_config.php';
+?>
+
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -32,7 +37,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2">Contact Phone Number </label>
 					<div class="col-sm-10">
-						<input type="number" name="ph_no" id="phno" class="form-control">
+						<input type="number" name="phno" id="phno" class="form-control">
 					</div>
 				</div>		
 				<div class="form-group">
@@ -176,11 +181,11 @@
 							</tr>
 							<tr>
 								<td>B.Tech Electronics and Communications Engineering(ECE)</td>
-								<td><input type="tabletext" name="preforder1"></td>
+								<td><input type="tabletext" name="preforder2"></td>
 							</tr>
 							<tr>
 								<td>B.Tech Computer Science and Applied Mathematics(CSAM)</td>
-								<td><input type="tabletext" name="preforder1"></td>
+								<td><input type="tabletext" name="preforder3"></td>
 							</tr>
 						</table>
 					</div>
