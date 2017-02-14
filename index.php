@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Validation Script -->
+	<script src="js/validationScript.js"></script>
+
 </head>
 <body>
 	<div class="jumbotron text-center">
@@ -17,11 +20,11 @@
 		</header>
 	</div>
 	<div class="container">	
-		<form action="" method="post" class="form-horizontal">  
+		<form name="main_form" action="" onsubmit="return validateForm()" method="post" class="form-horizontal">  
 			<div class="form-group">
 				<label class="control-label col-sm-2">Name </label>
 				<div class="col-sm-10">
-					<input type="text" name="name" width="100px;" class="form-control">
+					<input type="text" name="name" id="name" width="100px;" class="form-control">
 				</div>
 			</div>
 			<fieldset>
@@ -29,19 +32,19 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2">Contact Phone Number </label>
 					<div class="col-sm-10">
-						<input type="number" name="ph_no" class="form-control">
+						<input type="number" name="ph_no" id="phno" class="form-control">
 					</div>
 				</div>		
 				<div class="form-group">
 					<label class="control-label col-sm-2">Current Address </label>
 					<div class="col-sm-10">
-						<textarea rows="3" name="address" class="form-control"></textarea>
+						<textarea rows="3" name="address" id="address" class="form-control"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-2">Gender</label>	
 					<div class="col-sm-10">
-						<label class="radio-inline"><input type="radio" name="gender" value="Male">Male</label>	
+						<label class="radio-inline"><input type="radio" name="gender" value="Male" checked>Male</label>	
 						<label class="radio-inline"><input type="radio" name="gender" value="Female">Female</label>
 						<label class="radio-inline"><input type="radio" name="gender" value="Transgender">Transgender</label>
 					</div>
