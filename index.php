@@ -35,9 +35,20 @@ require 'php/database_config.php';
 			<fieldset>
 				<legend>Personal Information</legend>
 				<div class="form-group">
-					<label class="control-label col-sm-2">Contact Phone Number </label>
-					<div class="col-sm-10">
-						<input type="number" name="phno" id="phno" class="form-control">
+					<label>Contact Phone Number</label><br>
+					<label class="control-label col-sm-2">Primary </label>
+					<div class="col-sm-4">
+						<input type="number" name="ccode1" id="ccode1" placeholder="Country Code"class="form-control">
+					</div>
+					<div class="col-sm-6">
+						<input type="number" name="phno1" id="phno1" placeholder="Phone Number"class="form-control">
+					</div>
+					<label class="control-label col-sm-2">Secondary </label>
+					<div class="col-sm-4">
+						<input type="number" name="ccode2" id="ccode2"  placeholder="Country Code" class="form-control">
+					</div>
+					<div class="col-sm-6">
+						<input type="number" name="phno2" id="phno2" placeholder="Phone Number"class="form-control">
 					</div>
 				</div>		
 				<div class="form-group">
@@ -60,6 +71,12 @@ require 'php/database_config.php';
 						<input type="Date" name="dob" class="form-control">
 					</div>
 				</div>	
+				<div class="form-group">
+					<label class="control-label col-sm-2">Country of Birth </label>
+					<div class="col-sm-10">
+						<input type="text" name="cob" id="cob" class="form-control">
+					</div>
+				</div>
 				<div class="form-group">	
 					<label class="control-label col-sm-2">Citizenship </label>
 					<div class="col-sm-10">	
@@ -144,6 +161,36 @@ require 'php/database_config.php';
 						</div>
 					</div>
 					<div class="form-group">
+						<div class="col-sm-4">
+							<label class="control-label col-sm-2">Country</label>
+							
+								<input type="text" name="schoolname" class="form-control">
+							
+						</div>
+						<div class="col-sm-4">
+							<label class="control-label col-sm-2">State</label>
+							
+								<input type="text" name="schoolname" class="form-control">
+							
+						</div>
+						<div class="col-sm-4">
+							<label class="control-label col-sm-2">Pincode</label>
+							
+								<input type="text" name="schoolname" class="form-control">
+							
+						</div>
+					</div>
+						<!-- <label class="control-label col-sm-2">Country</label>
+						<div class="col-sm-10">
+							<input class="col-sm-2" type="text" name="" class="form-control">
+							<label class="col-sm-2">State</label>
+							<input class="col-sm-2" type="text" name="" class="form-control">
+							<label class="col-sm-2">Pincode</label>
+							<input class="col-sm-2" type="text" name="" class="form-control">
+						</div>
+						 -->
+					
+					<div class="form-group">
 						<label class="control-label col-sm-2">Date of Entry in the School</label>
 						<div class="col-sm-10">
 							<input type="Date" name="schoolentrydate" class="form-control">
@@ -168,7 +215,7 @@ require 'php/database_config.php';
 						</div>
 					</div>
 					<p><li>Program Applying For<br>
-					(Please put 1-3 as order or preference against the program)</p>
+					(Please put 1-5 as order or preference against the program)</p>
 					<div class="table-responsive">
 						<table class="table">
 							<tr>
@@ -177,15 +224,58 @@ require 'php/database_config.php';
 							</tr>
 							<tr>
 								<td>B.Tech Computer Science and Engineering(CSE)</td>
-								<td><input type="tabletext" name="preforder1"></td>
+								<td><select name="preforder1" width:100%>
+									<option selected disabled>Choose here</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select></td>
 							</tr>
 							<tr>
 								<td>B.Tech Electronics and Communications Engineering(ECE)</td>
-								<td><input type="tabletext" name="preforder2"></td>
+								<td><select name="preforder2" width:100%>
+									<option selected disabled>Choose here</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select></td>	
 							</tr>
 							<tr>
 								<td>B.Tech Computer Science and Applied Mathematics(CSAM)</td>
-								<td><input type="tabletext" name="preforder3"></td>
+								<td><select name="preforder3" width:100%>
+									<option selected disabled>Choose here</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td>B.Tech Computer Science and Design (CSD)</td>
+								<td><select name="preforder4" width:100%>
+									<option selected disabled>Choose here</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td>B.Tech Information Technology and Social Sciences (ITSS)</td>
+								<td><select name="preforder5" width:100%>
+									<option selected disabled>Choose here</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select></td>
 							</tr>
 						</table>
 					</div>
